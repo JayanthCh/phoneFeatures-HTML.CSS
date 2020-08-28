@@ -1,0 +1,176 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  background-image: linear-gradient(to right, yellow , lightgreen);
+}
+
+nav{
+  width: 100%;
+  height: 100px;
+  position: sticky;
+
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+nav .logo{
+  width: 100px;
+  height: 100%;
+ display: flex;
+  align-items: center;
+  flex-basis: auto;
+  margin-left: 40px;
+
+}
+.logo h2{
+  width: 600px;
+  display: flex;
+  margin-left: 20px;
+
+  display: inline-block;
+}
+.logo img{
+  width: 100%;
+  height: auto;
+  align-items:center;
+  padding-left: 20px;
+
+}
+
+.nav-list{
+  width: 60%;
+  margin-top: 10px;
+  text-align: right;
+  flex: 1;
+
+}
+.nav-list ul li{
+  display: inline-block;
+  margin: 0 20px;
+
+list-style: none;
+
+}
+.nav-list ul li a{
+  color: black;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.info{
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+
+
+  transform: translateY(-50% );
+
+}
+#circle{
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+ top: 0;
+  left: 0;
+  transition: 1s;
+  border-radius: 50%;
+  transform: rotate(0deg);
+}
+
+.features img{
+  width: 70px;
+}
+.features{
+  position: absolute;
+  display: flex;
+  color: white;
+}
+.features div{
+  margin-left: 20px;
+}
+.features div p{
+  text-align: center;
+  font-weight: bold;
+}
+.one{
+  top: 450px;
+  right: 50px;
+}
+
+.two{
+  top: 150px;
+  left: 400px;
+  transform: rotate(-90deg);
+}
+
+.three{
+  left: 50px;
+  bottom: 450px;
+    transform: rotate(-180deg);
+}
+.four{
+  bottom: 100px;
+  right: 350px;
+    transform: rotate(-270deg);
+}
+
+
+.phone{
+  width: 40%;
+  z-index: 1;
+  position: absolute;
+  margin-top: 40px;
+  top: 20%;
+  left: 43%;
+ transform: translate(-50%);
+}
+
+
+
+.controls {
+position: absolute;
+top: 50%;
+right: 10%;
+transform: translateY(-50%);
+cursor: pointer;
+text-align: center;
+
+}
+
+.controls h3{
+ padding: 10px;
+ text-align: center;
+ justify-content: center;
+}
+#upbtn{
+  width: 15px;
+  position: absolute;
+}
+#downbtn{
+  width: 15px;
+  transform: rotate(180deg);
+}
+
+.overlay{
+  width: 0;
+  height: 0;
+  border-top: 500px solid white;
+    border-right: 500px solid transparent;
+      border-bottom:  500px solid white;
+        border-left: 500px solid white;
+        position: absolute;
+        top:0;
+        left: 0;
+}

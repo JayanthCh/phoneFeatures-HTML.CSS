@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="main">
+
+
+              <nav>
+                  <div class="logo">
+                    <img src="logo.png" alt="">
+                    <h2> iphone_11Pro</h2>
+
+                  </div>
+
+                  <div class="nav-list">
+
+                    <ul>
+                      <li><a href="#">home</a></li>
+                      <li><a href="#">contact</a></li>
+                      <li><a href="#">phone</a></li>
+                      <li><a href="#">features</a></li>
+                    </ul>
+
+                  </div>
+             </nav>
+
+
+          <div class="info">
+
+                 <div class="overlay">
+
+                 </div>
+            <img class="phone"src="phone.png" alt="">
+
+
+            <div id="circle">
+
+              <div class="features one">
+                          <img src="battery.png" alt="">
+                        <div class="">
+                          <h1>battery</h1>
+                          <p> Li-Ion 3046 mAh battery </p>
+                        </div>
+              </div>
+                <div class="features two">
+                       <img src="camera.png" alt="">
+                       <div class="">
+                         <h1>camera</h1>
+                         <p>12 MP, f/2.2, 23mm (wide)</p>
+                       </div>
+                </div>
+                 <div class="features three">
+                        <img src="display.png" alt="">
+                        <div class="">
+                          <h1>display</h1>
+                          <p>5.8 inches, 84.4 cm2 </p>
+                        </div>
+                 </div>
+                   <div class="features four">
+                          <img src="processor.png" alt="">
+                          <div class="">
+                            <h1>processor</h1>
+                            <p>iOS 13, upgradable to iOS 13.5</p>
+                          </div>
+                   </div>
+
+
+            </div>
+
+          </div>
+
+
+<div class="controls">
+  <img src="arrow.png" id="upbtn"alt="">
+  <h3>features</h3>
+  <img src="arrow.png" id="downbtn"alt="">
+</div>
+    </div>
+
+
+
+
+
+<script type="text/javascript">
+
+var circle = document.getElementById("circle");
+var up = document.getElementById("upbtn");
+var down = document.getElementById("downbtn");
+var rotate = circle.style.transform;
+var roatateSum;
+
+up.onclick = function(){
+  roatateSum = rotate + "rotate(-90deg)";
+  circle.style.transform = roatateSum;
+  rotate = roatateSum;
+}
+
+down.onclick = function(){
+  roatateSum = rotate + "rotate(90deg)";
+  circle.style.transform = roatateSum;
+  rotate = roatateSum;
+}
+
+
+</script>
+
+  </body>
+</html>
